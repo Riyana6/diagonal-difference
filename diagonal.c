@@ -40,15 +40,15 @@ for(i=0;i<n;i++)
         }
     }
 }
-int dif=sum1-sum2;
+int diff=sum1-sum2;
 
-if(dif<0)
+if(diff<0)
 {
-    printf("%d",dif*(-1));
+    printf("%d",diff*(-1));
 }
 else 
 {
-    printf("%d",dif);
+    printf("%d",diff);
 }
 
 
