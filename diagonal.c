@@ -9,7 +9,7 @@
 
 int main()
 {
-int n,ar[100][100],i,j,sum1=0,sum2=0;
+int n,arr[100][100],i,j,sum1=0,sum2=0;
 
 scanf("%d",&n);
 
@@ -17,7 +17,7 @@ for(i=0;i<n;i++)
 {
     for(j=0;j<n;j++)
     {
-        scanf("%d",&ar[i][j]);
+        scanf("%d",&arr[i][j]);
     }
 }
 for(i=0;i<n;i++)
@@ -26,7 +26,7 @@ for(i=0;i<n;i++)
     {
         if(i==j)
         {
-            sum1=sum1+ar[i][j];
+            sum1=sum1+arr[i][j];
         }
     }
 }
@@ -36,19 +36,19 @@ for(i=0;i<n;i++)
     {
         if(j==(n-(i+1)))
         {
-            sum2=sum2+ar[i][j];
+            sum2=sum2+arr[i][j];
         }
     }
 }
-int diff=sum1-sum2;
+int dif=sum1-sum2;
 
-if(diff<0)
+if(dif<0)
 {
-    printf("%d",diff*(-1));
+    printf("%d",dif*(-1));
 }
 else 
 {
-    printf("%d",diff);
+    printf("%d",dif);
 }
 
 
